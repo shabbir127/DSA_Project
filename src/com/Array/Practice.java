@@ -27,6 +27,7 @@ public class Practice {
 		return result;
 	}
 	
+	//print array....
 	static void printArray(int arr[])
 	{
 		 for(int i=0;i<arr.length;i++)
@@ -92,9 +93,36 @@ public class Practice {
 	}
 	
 	
+	//move all zero to last...
+	
+	public static void moveZeros(int arr[])
+	{
+		int j=0;
+		for(int i=0 ; i < arr.length ;i++ )
+		{
+			if(arr[i] != 0 && arr[j] == 0)
+			{
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+			
+			if(arr[j] != 0)
+			{
+				j++;
+			}
+		}
+		printArray(arr);
+		
+		
+	}
+	
+	
+	
+	
 
 	public static void main(String[] args) {
-		int[] arr= {7,4,3,5,2,9,1,13,6,10};
+		int[] arr= {7,4,0,3,5,0,0,2,9,0,1,13,6,10};
 		
 		printArray(removeEven(arr));
 		System.out.print("orginal Array:- ");
@@ -107,5 +135,7 @@ public class Practice {
 		int secondMaxValue=secondMax(arr);
 		System.out.println("Second max value: - "+ secondMaxValue);
 		
+		System.out.print("Move all zeros to last :- ");
+		moveZeros(arr);
 	}
 }
