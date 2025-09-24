@@ -93,7 +93,7 @@ public class Practice {
 	}
 	
 	
-	//move all zero to last...
+	//move all zero to last... 
 	
 	public static void moveZeros(int arr[])
 	{
@@ -125,6 +125,8 @@ public class Practice {
 		int[] arr= {7,4,0,3,5,0,0,2,9,0,1,13,6,10};
 		
 		printArray(removeEven(arr));
+		
+		
 		System.out.print("orginal Array:- ");
 		printArray(arr);
 		System.out.print("Reverse Array:- ");
