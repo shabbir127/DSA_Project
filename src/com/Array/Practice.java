@@ -116,7 +116,18 @@ public class Practice {
 		
 		
 	}
-	
+	//resize of array
+	public static void reSize(int arr[], int capacity)
+	{
+		int temp[]= new int[capacity];
+		for(int i=0; i< arr.length ;i++)
+		{
+			temp[i]= arr[i];
+		}
+		arr=temp;
+		
+		printArray(arr);
+	}
 	
 	
 	
@@ -132,12 +143,15 @@ public class Practice {
 		System.out.print("Reverse Array:- ");
 		printArray(ReverseArray(arr,0,arr.length-1));
 		
-		System.out.println(minimumValue(arr));
+		System.out.println("Minimumof Array :- "+ minimumValue(arr));
 		
 		int secondMaxValue=secondMax(arr);
 		System.out.println("Second max value: - "+ secondMaxValue);
 		
 		System.out.print("Move all zeros to last :- ");
 		moveZeros(arr);
+		
+		System.out.print("ReSize of array : -");
+		reSize(arr, arr.length * 2);
 	}
 }
