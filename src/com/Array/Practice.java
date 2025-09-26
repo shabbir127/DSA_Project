@@ -142,6 +142,23 @@ public class Practice {
 		 return sum;
 	 }
 	
+	 //to check the given String is Palindrome .....
+	 public static boolean isPalindrome(String word)
+	 {
+		 char[] charArray= word.toCharArray();
+		 int start =0;
+		 int end=word.length()-1;
+		 while(start < end)
+		 {
+			 if(charArray[start] != charArray[end])
+			 {
+				 return false;
+			 }
+			 start ++;
+			 end --;
+		 }
+		 return true;
+	 }
 	
 	
 
@@ -150,7 +167,7 @@ public class Practice {
 		int[] arr= {7,4,0,3,5,0,0,2,9,0,1,13,6,10};
 		int[] arr1= {1,2,3,8,5,4,6};
 		printArray(removeEven(arr));
-		
+		String string="madam";
 		
 		System.out.print("orginal Array:- ");
 		printArray(arr);
@@ -169,6 +186,10 @@ public class Practice {
 		reSize(arr, arr.length * 2);
 		
 		System.out.print("Missing Number of array :- "+ missingNumber(arr1));
+		System.out.println("array length:- "+ arr1.length);
+		
+		System.out.print("The Given String is Palindrome :- "+ isPalindrome(string));
+		
 		
 		
 	}
