@@ -129,14 +129,26 @@ public class Practice {
 		printArray(arr);
 	}
 	
+	//Find the missing Number...
+	 public static int missingNumber(int arr[])
+	 {
+		 int n=arr.length+1;
+		 int sum= n*(n+1)/2;
+		 for(int num :arr)
+		 {
+			 sum=sum-num;
+		 }
+		 
+		 return sum;
+	 }
 	
 	
 	
-	
+
 // main method..
 	public static void main(String[] args) {
 		int[] arr= {7,4,0,3,5,0,0,2,9,0,1,13,6,10};
-		
+		int[] arr1= {1,2,3,8,5,4,6};
 		printArray(removeEven(arr));
 		
 		
@@ -155,5 +167,9 @@ public class Practice {
 		
 		System.out.print("ReSize of array : -");
 		reSize(arr, arr.length * 2);
+		
+		System.out.print("Missing Number of array :- "+ missingNumber(arr1));
+		
+		
 	}
 }
