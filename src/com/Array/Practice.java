@@ -131,6 +131,8 @@ public class Practice {
 	
 	
 	
+	
+	
 // main method..
 	public static void main(String[] args) {
 		int[] arr= {7,4,0,3,5,0,0,2,9,0,1,13,6,10};
