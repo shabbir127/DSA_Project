@@ -160,6 +160,27 @@ public class Practice {
 		 return true;
 	 }
 	
+	 //linked list....
+	 public class SingleLinkedList{
+		 
+		 private ListNode head;
+		 
+		 private static class ListNode{
+			 private int data;
+			 private ListNode next;
+			 
+			 public ListNode(int data)
+			 {
+				 this.data=data;
+				 this.next=null;
+			 } 
+		 }
+		 
+		 
+		 
+		 
+		 
+	 }
 	
 
 // main method..
