@@ -43,5 +43,6 @@ public class PracticeLinkedList {
 		 pll.display();
 		 
 		 
+		 
 	}
 }
