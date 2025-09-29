@@ -7,16 +7,25 @@ public class PracticeLinkedList {
 	 private static class ListNode{
 		 private int data;
 		 private ListNode next;
-		 
+		   
 		 public ListNode(int data)
 		 {
 			 this.data=data;
 			 this.next=null;
-		 } 
-		 
-		 
+		 } 		 
    
 	 }
+	 
+	 public void  display()
+		{
+			ListNode current=head;
+			while(current != null)
+			{
+				System.out.print(current.data + " --> ");
+				current=current.next;
+			}
+			System.out.print("null");
+		}
 	 
 	 public static void main(String[] args) {
 		
@@ -31,7 +40,7 @@ public class PracticeLinkedList {
 		 second.next=third;    //10-->20 -->30
 		 third.next=fourth;    //10 -->20 -->30 -->40
 		 
-		 
+		 pll.display();
 		 
 		 
 	}
