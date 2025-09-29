@@ -13,6 +13,8 @@ public class PracticeLinkedList {
 			 this.data=data;
 			 this.next=null;
 		 } 
+		 
+		 
    
 	 }
 	 
@@ -25,9 +27,11 @@ public class PracticeLinkedList {
 		 ListNode fourth=new ListNode(40);
 		 
 		 //now we will connect them together to from a chain.
-		 pll.head.next=second;
-		 second.next=third;
-		 third.next=fourth;
+		 pll.head.next=second; //10 -->20
+		 second.next=third;    //10-->20 -->30
+		 third.next=fourth;    //10 -->20 -->30 -->40
+		 
+		 
 		 
 		 
 	}
