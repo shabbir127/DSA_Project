@@ -174,12 +174,8 @@ public class Practice {
 				 this.data=data;
 				 this.next=null;
 			 } 
-		 }
-		 
-		 
-		 
-		 
-		 
+        
+		 }	 
 	 }
 	
 
@@ -210,6 +206,9 @@ public class Practice {
 		System.out.println("array length:- "+ arr1.length);
 		
 		System.out.print("The Given String is Palindrome :- "+ isPalindrome(string));
+		
+		
+		
 		
 		
 		
