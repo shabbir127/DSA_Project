@@ -35,6 +35,21 @@ public class PracticeLinkedList {
 		 display();
 	 }
 	 
+	 public void InsertNodeLast(int value)
+	 {
+		 ListNode newNode = new ListNode(value);
+		 if (head == null) {
+			head = newNode;
+			return;
+		}
+		 ListNode current =head;
+		 while(null != current.next)
+		 {
+			 current =current.next;
+		 }
+		 current.next=newNode;
+	 }
+	 
 	 public void displayLinkedlistLength()
 	 {
 		 ListNode current = head;
@@ -55,6 +70,7 @@ public class PracticeLinkedList {
 		 ListNode third=new ListNode(30);
 		 ListNode fourth=new ListNode(40);
 		 
+		
 		 //now we will connect them together to from a chain.
 		 pll.head.next=second; //10 -->20
 		 second.next=third;    //10-->20 -->30
