@@ -27,6 +27,18 @@ public class PracticeLinkedList {
 			System.out.print("null");
 		}
 	 
+	 public void displayLinkedlistLength()
+	 {
+		 ListNode current = head;
+		 int count =0;
+		 while(current != null)
+		 {
+			 count ++;
+			 current=current.next;
+		 }
+		 System.out.println("\n Length of linked List is :- " + count);
+	 }
+	 
 	 public static void main(String[] args) {
 		
 		 PracticeLinkedList pll=new PracticeLinkedList();
@@ -41,7 +53,7 @@ public class PracticeLinkedList {
 		 third.next=fourth;    //10 -->20 -->30 -->40
 		 
 		 pll.display();
-		 
+		 pll.displayLinkedlistLength();
 		 
 		 
 	}
