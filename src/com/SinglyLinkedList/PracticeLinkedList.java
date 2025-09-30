@@ -27,6 +27,14 @@ public class PracticeLinkedList {
 			System.out.print("null");
 		}
 	 
+	 public void InsertNodeFirst(int value)
+	 {
+		 ListNode newNode=new ListNode(value);
+		 newNode.next=head;
+		 head=newNode;
+		 display();
+	 }
+	 
 	 public void displayLinkedlistLength()
 	 {
 		 ListNode current = head;
@@ -54,7 +62,7 @@ public class PracticeLinkedList {
 		 
 		 pll.display();
 		 pll.displayLinkedlistLength();
-		 
+		 pll.InsertNodeFirst(9);
 		 
 	}
 }
