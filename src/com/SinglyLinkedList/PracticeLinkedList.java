@@ -8,6 +8,7 @@ public class PracticeLinkedList {
 		 private int data;
 		 private ListNode next;
 		   
+		 
 		 public ListNode(int data)
 		 {
 			 this.data=data;
@@ -48,6 +49,7 @@ public class PracticeLinkedList {
 			 current =current.next;
 		 }
 		 current.next=newNode;
+		 display();
 	 }
 	 
 	 public void displayLinkedlistLength()
@@ -79,6 +81,7 @@ public class PracticeLinkedList {
 		 pll.display();
 		 pll.displayLinkedlistLength();
 		 pll.InsertNodeFirst(9);
-		 
+		 System.out.println();
+		 pll.InsertNodeLast(50);
 	}
 }
