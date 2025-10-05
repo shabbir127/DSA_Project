@@ -71,7 +71,7 @@ public class Practice {
 	
 	
 	//finding the second maximum numbers.
-	
+
 	public static int secondMax(int[] arr)
 	{
 		int max=Integer.MIN_VALUE;
@@ -93,8 +93,7 @@ public class Practice {
 	}
 	
 	
-	//move all zero to last... 
-	
+	//move all zero to last... 	
 	public static void moveZeros(int arr[])
 	{
 		int j=0;

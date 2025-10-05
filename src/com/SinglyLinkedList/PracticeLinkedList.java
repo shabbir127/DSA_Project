@@ -49,8 +49,33 @@ public class PracticeLinkedList {
 			 current =current.next;
 		 }
 		 current.next=newNode;
+		
 		 display();
 	 }
+	 
+	 public void InsertNodeAnyPosition(int value, int position)
+	 {
+		 ListNode node = new ListNode(value);
+		 if(head == null)
+		 {
+			 node.next=head;
+			 head=node;
+		 }else {
+			ListNode previous=head;
+			int count=1;
+			while(count < position - 1 )
+			{
+				previous =previous.next;
+				count ++;
+			}
+			ListNode current=previous.next;
+			node.next=current;
+			previous.next=node;
+			display();
+		}
+	 }
+	 
+	 
 	 
 	 public void displayLinkedlistLength()
 	 {
@@ -63,6 +88,9 @@ public class PracticeLinkedList {
 		 }
 		 System.out.println("\n Length of linked List is :- " + count);
 	 }
+	 
+	 
+	 
 	 
 	 public static void main(String[] args) {
 		
@@ -83,5 +111,7 @@ public class PracticeLinkedList {
 		 pll.InsertNodeFirst(9);
 		 System.out.println();
 		 pll.InsertNodeLast(50);
+		 System.out.println("\n");
+		 pll.InsertNodeAnyPosition(25, 3);
 	}
 }
