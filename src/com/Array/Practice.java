@@ -71,8 +71,8 @@ public class Practice {
 	
 	
 	//finding the second maximum numbers.
-
 	public static int secondMax(int[] arr)
+	
 	{
 		int max=Integer.MIN_VALUE;
 		int secondMax=Integer.MIN_VALUE;
