@@ -152,7 +152,8 @@ public class ArrayWithPratyushSet1 {
 	
 		Arrays.sort(arr);
 		int n=arr.length;
-		int closestSum=arr[0]+arr[1]+arr[2];
+		//int closestSum=arr[0]+arr[1]+arr[2];
+		int closestSum=Integer.MAX_VALUE;
 		for(int i=0; i < n ;i++)
 		{
 			int left=i+1;
@@ -184,13 +185,18 @@ public class ArrayWithPratyushSet1 {
 	
 	//main
 	public static void main(String[] args) {
-		int[] arr= {1,1,1,2,2,2,3,3,3,3,4,4,5,6,6,19};
-		int[] arr1= {-4,-1,0,3,10};
-		int [] nums= {-1,0,1,2,-1,-4};
+		//int[] arr= {1,1,1,2,2,2,3,3,3,3,4,4,5,6,6,19};
+		//int[] arr1= {-4,-1,0,3,10};
+		//int [] nums= {-1,0,1,2,-1,-4};
 //		RemoveDuplicate(arr);
 //		PairSum(arr);
 //      squaringArray(arr1);
-		System.out.println(ThreeSum(nums));
+		//System.out.println(ThreeSum(nums));
+		
+		
+		int[] nums = {-1,2,1,-4};
+		int	target = 1;
+		System.out.println(ThreeSumClosest(nums, target));
 		
 		
 	}
