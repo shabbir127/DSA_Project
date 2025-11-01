@@ -152,8 +152,8 @@ public class ArrayWithPratyushSet1 {
 	
 		Arrays.sort(arr);
 		int n=arr.length;
-		//int closestSum=arr[0]+arr[1]+arr[2];
-		int closestSum=Integer.MAX_VALUE;
+		int closestSum=arr[0]+arr[1]+arr[2];
+		//int closestSum=Integer.MAX_VALUE;
 		for(int i=0; i < n ;i++)
 		{
 			int left=i+1;
