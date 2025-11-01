@@ -20,7 +20,7 @@ public class ArrayPractice1 {
 				continue;
 			}
 			
-			int left=0;
+			int left=i+1;
 			int right=arr.length-1;
 			
 			while(left < right)
@@ -32,21 +32,31 @@ public class ArrayPractice1 {
 					result.add(Arrays.asList(arr[i],arr[left],arr[right]));
 					
 					//skip if the value is duplicate for left and right..........
+					while(left < right && arr[left]==arr[left+1])
+					{
+						left++;
+					}
+					
+					while(left < right && arr[right]== arr[right-1])
+					{
+						right--;
+					}
+					
+					left ++;
+					right --;
+				}else if (sum > 0) {
+					right--;
+				}else {
+					left ++;
 				}
 				
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		return result;
-		
-		
-		
-	}
 
+		return result;
+	}
+public static void main(String[] args) {
+	int[] arr1 = {-1, 0, 1, 2, -1, -4};
+	System.out.println(TripletsEqualZero(arr1));
+}
 }
