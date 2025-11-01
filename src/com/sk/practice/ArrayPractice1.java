@@ -60,7 +60,32 @@ public class ArrayPractice1 {
 	
 	
 	//threeSum (TripletsSum) cloest to target.....
-	
+	public static int threeSumClosestToTarget(int[] arr, int target)
+	{
+		int Closestsum=arr[0]+arr[1]+arr[2];
+		
+		for(int i=0;i< arr.length ;i++)
+		{
+			int left =i+1;
+			int right=arr.length-1;
+			
+			while(left <right)
+			{
+				int CurrentSum=arr[i]+arr[left]+arr[right];
+				
+				if(Math.abs(CurrentSum-target) < Math.abs(Closestsum-target))
+				{
+					Closestsum =CurrentSum;
+				}else if (CurrentSum < target) {
+				   left++;	
+				}else {
+					right--;
+				}
+			}
+		}
+		
+		return Closestsum;
+	}
 	
 	
 	
@@ -69,6 +94,8 @@ public class ArrayPractice1 {
 	
 public static void main(String[] args) {
 	int[] arr1 = {-1, 0, 1, 2, -1, -4};
+	//int [] nums= {-1,0,1,2,-1,-4};
 	System.out.println(TripletsEqualZero(arr1));
+	System.out.println(threeSumClosestToTarget(arr1, 5));
 }
 }
