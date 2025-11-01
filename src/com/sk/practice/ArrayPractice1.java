@@ -60,6 +60,13 @@ public class ArrayPractice1 {
 	
 	
 	//threeSum (TripletsSum) cloest to target.....
+	
+	
+	
+	
+	
+	
+	
 public static void main(String[] args) {
 	int[] arr1 = {-1, 0, 1, 2, -1, -4};
 	System.out.println(TripletsEqualZero(arr1));
