@@ -21,12 +21,16 @@ public class removeDeplicateArray {
 	
 	public static void removeDuplicatesAdd(int[] nums)
 	{
-		int j=0;
+		int i=2;
 		
-		for(int i=2;i < nums.length ;i++)
+		for(int j=2;j < nums.length ;j++)
 		{
+			System.out.println(nums[j] != nums[i-2]);
+			System.out.println(j + " "+ (i-2));
 			if (nums[j] != nums[i-2]) {
+				
 			    nums[i] = nums[j];
+			    
 			    i++;
 			}
 		}
@@ -40,15 +44,16 @@ public class removeDeplicateArray {
 		{
 			for(int i=0;i < arr.length ;i++)
 			{
-				System.out.println("Index od array:- "+ i +": "+ arr[i]);
+				System.out.print(" "+ arr[i]);
 			}
 			
 		}
 	
 	public static void main(String[] args) {
-		int[] arr= {1,1,1,2,2,3,3,3,3,4,4,5,5,6};
-		int result=removeDuplicates(arr);
-		System.out.println("result "+result);
+		int[] arr= {1,1,1,2,2,3,3,3,3,4,4,4,5,5};
+		//int result=removeDuplicates(arr);
+		//System.out.println("result "+result);
+		removeDuplicatesAdd(arr);
 	}
 
 }
