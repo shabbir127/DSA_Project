@@ -19,7 +19,7 @@ public class removeDeplicateArray {
 		return next;
 	}
 	
-	public static int[] removeDuplicatesAdd(int[] nums)
+	public static void removeDuplicatesAdd(int[] nums)
 	{
 		int j=0;
 		
@@ -31,12 +31,22 @@ public class removeDeplicateArray {
 			}
 		}
 		
-		return nums;
+		 Traversal(nums);
 	
 	}
 	
+	 //static Scanner sc=new Scanner(System.in);
+		public  static void Traversal(int arr[])
+		{
+			for(int i=0;i < arr.length ;i++)
+			{
+				System.out.println("Index od array:- "+ i +": "+ arr[i]);
+			}
+			
+		}
+	
 	public static void main(String[] args) {
-		int[] arr= {1,1,2,2,3,3,3,4,4,5,5,6};
+		int[] arr= {1,1,1,2,2,3,3,3,3,4,4,5,5,6};
 		int result=removeDuplicates(arr);
 		System.out.println("result "+result);
 	}
