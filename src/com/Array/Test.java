@@ -35,24 +35,26 @@ public class Test {
 		
 		while(i < j) 
 		{
-			int left=s.charAt(i);
-			int right=s.charAt(i);
+			char left=s.charAt(i);
+			char right=s.charAt(j);
 			
 			
 			if(!Character.isLetterOrDigit(left))
 			{
-				i=i++;
+				i++;
+				continue;
 			}
 			if(!Character.isLetterOrDigit(right))
 			{
-				j=j++;
+				j--;
+				continue;
 			}
-			if (Character.isLowerCase(left) != Character.isLowerCase(right)) {
+			if (Character.toLowerCase(left) != Character.toLowerCase(right)) {
 				return false;
 			}
 			
 			i++;
-			j++;
+			j--;
 		}
 		return true;
 	}
@@ -60,8 +62,8 @@ public class Test {
 	public static void main(String[] args) {
 		String[] arr= {"l","e","v","e","l"};
 		pandilrome(arr);
-		
-		
+		boolean result=isPalindrome("A man, a plan, a canal: Panama");
+		System.out.println("result:- "+ result);
 	}
 
 }
