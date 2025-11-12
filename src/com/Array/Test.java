@@ -58,12 +58,33 @@ public class Test {
 		}
 		return true;
 	}
+	//reverse.....
+	
+	public static char[] reverse(char[] s)
+	{
+		int j=s.length-1;
+		int i=0;
+		
+		while(i < j)
+		{
+			char temp=s[i];
+			s[i]=s[j];
+			s[j]=temp;
+			i++;
+			j--;
+		}
+		
+		return s;
+	}
 	
 	public static void main(String[] args) {
 		String[] arr= {"l","e","v","e","l"};
 		pandilrome(arr);
 		boolean result=isPalindrome("A man, a plan, a canal: Panama");
 		System.out.println("result:- "+ result);
+		char[] s = {'h','e','l','l','o'};
+		char[] reversedata=reverse(s);
+		System.out.println(reversedata);
 	}
 
 }
