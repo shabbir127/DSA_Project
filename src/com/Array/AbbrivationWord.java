@@ -9,6 +9,11 @@ public class AbbrivationWord {
 		int i=0;
 		int j=0;
 		
+		//apple
+        //i
+		//a3e
+		//j
+		
 		while(i< word.length() && j < abbr.length())
 		{
 			char w_c=word.charAt(i);
