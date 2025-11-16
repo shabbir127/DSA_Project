@@ -1,11 +1,14 @@
 package com.Array;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PairsLessThenTarget {
 
 	public static int pairs(List<Integer> nums, int target)
 	{
+		Collections.sort(nums);
 		int i=0;
 		int j=nums.size()-1;
 		
@@ -28,7 +31,9 @@ public class PairsLessThenTarget {
 	}
 	
 	public static void main(String[] args) {
-	    List<Integer> nums = List.of(-1,1,2,3,1); 
+	    //List<Integer> nums = List.of(-1,1,2,3,1); 
+		List<Integer> nums = new ArrayList<>(List.of(-1, 1, 2, 3, 1));
+
 		int target = 2;
 		
 		int result=pairs(nums, target);
