@@ -1,7 +1,7 @@
 package com.Java8;
 
 
-public class FunctionalInterfaceEx implements Runnable{
+public class FunctionalInterfaceEx {
 
 	
 	public static void main(String[] args) {
@@ -20,15 +20,15 @@ public class FunctionalInterfaceEx implements Runnable{
 		 thread.start();
 	}
 
-	@Override
-	public void run() {
-	 
-		for(int i=0;i<5 ;i++)
-		{
-			System.out.print("Child thread.. ");
-		}
-		
-	}
+
+//	public void run() {
+//	 
+//		for(int i=0;i<5 ;i++)
+//		{
+//			System.out.print("Child thread.. ");
+//		}
+//		
+//	}
 	
 }
 
