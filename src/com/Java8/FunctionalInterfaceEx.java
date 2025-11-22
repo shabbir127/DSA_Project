@@ -16,8 +16,18 @@ public class FunctionalInterfaceEx {
 		
 		//Thread operation 
 		FunctionalInterfaceEx fEx=new FunctionalInterfaceEx();
-		 Thread thread=new Thread(fEx);
-		 thread.start();
+		Runnable runnable=()->{
+			
+				 
+				for(int i=0;i<5 ;i++)
+				{
+					System.out.print("Child thread.. ");
+				}
+				
+
+		};
+		runnable.run();
+		 
 	}
 
 
