@@ -27,6 +27,10 @@ public class FunctionalInterfaceEx {
 
 		};
 		runnable.run();
+		
+		//both way is fine...
+		Thread thread=new Thread(runnable);
+		thread.start();
 		 
 	}
 
