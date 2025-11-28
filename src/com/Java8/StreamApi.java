@@ -37,6 +37,10 @@ public class StreamApi {
 	    
 	    Map<String, Integer> graceMap=Student.entrySet().stream().filter(i-> i.getValue() < 35).collect(Collectors.toMap(Map.Entry::getKey, i ->i.getValue() +5));
 	    System.out.println("Grace mark got and passed student list : "+graceMap);
+	    
+	    long CountStudent=marks.stream().filter(i-> i < 35).count();
+	    System.out.println("Total failed student:- "+ CountStudent);
+		
 	}
 
 }
