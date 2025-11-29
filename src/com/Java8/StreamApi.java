@@ -49,8 +49,9 @@ public class StreamApi {
 	    long CountStudent=marks.stream().filter(i-> i < 35).count();
 	    System.out.println("Total failed student:- "+ CountStudent);
 		
-	    
-	    
+	    System.out.println("-----------------------------------Sorted-----------");
+	    List<Integer> sortList = marks.stream().sorted().toList();
+	   System.out.println("Sorted Marks List :-" + sortList); 
 	
 	
 	
