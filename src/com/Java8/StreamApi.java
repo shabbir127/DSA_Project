@@ -54,7 +54,9 @@ public class StreamApi {
 	    System.out.println("Sorted Marks List :-" + sortList); 
 	   
 	    List<Integer> decliList=  marks.stream().sorted((a,b) ->(a<b)?1 :(a>b) ?-1 :0).toList();
+	    List<Integer> decliList1=  marks.stream().sorted((a,b)-> -a.compareTo(b)).toList();
 	    System.out.println("Sorted in decasending order : "+ decliList);
+	    System.out.println("Sorted in decasending order : "+ decliList1);
 	
 	}
 
