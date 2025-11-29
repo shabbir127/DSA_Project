@@ -45,15 +45,16 @@ public class StreamApi {
 	    Map<String, Integer> graceMap=Student.entrySet().stream().filter(i-> i.getValue() < 35).collect(Collectors.toMap(Map.Entry::getKey, i ->i.getValue() +5));
 	    System.out.println("Grace mark got and passed student list : "+graceMap);
 	    
-	    System.out.println("----------------------------------COUNT Function ------------------------------------");
+	    System.out.println("\n----------------------------------COUNT Function ------------------------------------");
 	    long CountStudent=marks.stream().filter(i-> i < 35).count();
 	    System.out.println("Total failed student:- "+ CountStudent);
 		
 	    System.out.println("-----------------------------------Sorted-----------");
 	    List<Integer> sortList = marks.stream().sorted().toList();
-	   System.out.println("Sorted Marks List :-" + sortList); 
-	
-	
+	    System.out.println("Sorted Marks List :-" + sortList); 
+	   
+	    List<Integer> decliList=  marks.stream().sorted((a,b) ->(a<b)?1 :(a>b) ?-1 :0).toList();
+	    System.out.println("Sorted in decasending order : "+ decliList);
 	
 	}
 
