@@ -49,6 +49,11 @@ public class StreamApi {
 	    long CountStudent=marks.stream().filter(i-> i < 35).count();
 	    System.out.println("Total failed student:- "+ CountStudent);
 		
+	    
+	    
+	
+	
+	
 	}
 
 }
