@@ -14,6 +14,7 @@ public class Java_8 {
 		//total number of element is present
 		System.out.println( "Total number :- "+nums.stream().count());
 		nums.stream().filter(num -> num%2==0).forEach(System.out::println);
+		 
 		
 		
 	}
