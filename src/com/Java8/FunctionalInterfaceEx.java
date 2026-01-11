@@ -13,7 +13,7 @@ public class FunctionalInterfaceEx {
 		t1.m1();
 		t1.m2();
 		
-		Test.m3();
+		Test.m3(); 
 		
 		//Thread operation 
 		FunctionalInterfaceEx fEx=new FunctionalInterfaceEx();
