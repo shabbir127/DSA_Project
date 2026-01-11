@@ -12,6 +12,7 @@ public class FunctionalInterfaceEx {
 		t2.add(12, 23);
 		t1.m1();
 		t1.m2();
+		
 		Test.m3();
 		
 		//Thread operation 

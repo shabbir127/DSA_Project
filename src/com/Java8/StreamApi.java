@@ -21,6 +21,7 @@ public class StreamApi {
 		
 		List<Integer> marks=Arrays.asList(52,26,47,79,48,33,42,71);
 		
+		
 		System.out.println("-----------------------Filter Function --------------------------");
 		List<Integer> filterList=list.stream().filter(i-> i%2==0).toList();
 		System.out.println("Divsible by 2 :-" + filterList);// input=10
