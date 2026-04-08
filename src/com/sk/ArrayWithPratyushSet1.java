@@ -101,7 +101,7 @@ public class ArrayWithPratyushSet1 {
 	
 	
 	
-	//3Sum
+	//3Sum 
 	public static List<List<Integer>> ThreeSum(int [] arr)
 	{
 		//List<List><Integer> result=new ArrayList<>();
